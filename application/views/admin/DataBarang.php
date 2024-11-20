@@ -20,7 +20,7 @@
             <td><?php echo $brg->nama_barang ?></td>
             <td><?php echo $brg->keterangan ?></td>
             <td><?php echo $brg->kategori ?></td>
-            <td><?php echo $brg->harga ?></td>
+            <td><?php echo '$ ' . $brg->harga ?></td>
             <td><?php echo $brg->stok ?></td>
             <td><?php echo anchor('admin/dataBarang/detail/' . $brg->id_barang, '<div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>') ?></td>
             <td><?php echo anchor('admin/dataBarang/edit/' . $brg->id_barang, '<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>') ?></td>
@@ -29,7 +29,7 @@
         <?php endforeach; ?>
     </table>
 
-    <!-- Modal -->
+<!-- Modal Tambah Barang -->
 <div class="modal fade" id="tambah_barang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

@@ -9,10 +9,10 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/silder1.jpg') ?>" class="d-block w-100" alt="...">
+      <img src="<?php echo base_url('') ?>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/silder2.jpg') ?>" class="d-block w-100" alt="...">
+      <img src="<?php echo base_url('') ?>" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -31,9 +31,11 @@
                 <div class="card-body">
                     <h5 class="card-title mb-1"><?php echo $brg->nama_barang ?></h5>
                     <small><?php echo $brg->keterangan ?></small><br>
-                    <span class="badge badge-pill badge-success mb-3">Rp. <?php echo $brg->harga ?></span>
-                    <a href="#" class="btn btn-sm btn-primary">Tambah ke keranjang</a>
-                    <a href="#" class="btn btn-sm btn-success">Detail</a>
+                    <span class="badge badge-pill badge-success mb-3">$ <?php echo $brg->harga ?></span>
+                    <?php echo anchor('dashboard/addCart/'.$brg->id_barang, '<div class="btn btn-sm btn-primary">Tambah ke keranjang</div>') ?>
+                    <?php echo anchor('dashboard/detail/'.$brg->id_barang,'<div class="btn btn-sm btn-success">Detail</div>') ?>
+                    <!-- <a href="#" class="btn btn-sm btn-primary">Tambah ke keranjang</a> -->
+                    <!-- <a href="#" class="btn btn-sm btn-success">Detail</a> -->
                 </div>
             </div>
         <?php endforeach; ?>

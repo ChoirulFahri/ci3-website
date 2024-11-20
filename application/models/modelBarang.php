@@ -28,4 +28,24 @@ class Modelbarang extends CI_Model {
         $query = $this->db->get($table);
         return $query->row()->id_barang;
     }
+
+    public function find($id) {
+        $result = $this->db->where('id_barang', $id)
+            ->limit(1)
+            ->get('data_barang');
+        if ($result->num_rows() > 0) {
+            return $result->row();
+        } else {
+            return array();
+        }
+    }
+
+    public function detailBarang($id_barang){
+		$result = $this->db->where('id_barang',$id_barang)->get('data_barang');
+		if($result->num_rows() > 0){
+			return $result->result();
+		}else {
+			return false;
+		}
+	}
 }

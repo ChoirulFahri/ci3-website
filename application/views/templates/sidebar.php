@@ -132,6 +132,19 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
+                        </li>
+
+                        <div class="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <?php $cart = 'Keranjang Belanja : '.$this->cart->total_items().'items'?>
+
+                                    <?php echo anchor('dashboard/detailCart', $cart) ?>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
