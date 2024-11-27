@@ -42,7 +42,7 @@ class Modelinvoice extends CI_Model{
 
 	public function getidInvoice($id_invoice)
 	{
-		$result = $this->db->where('id_invoice', $id_invoice)->limit(1)->get('invoice');
+		$result = $this->db->where('id', $id_invoice)->limit(1)->get('invoice');
 		if($result->num_rows() > 0){
 			return $result->row();
 		}else {
