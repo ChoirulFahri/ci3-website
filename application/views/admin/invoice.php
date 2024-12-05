@@ -21,7 +21,7 @@
 			<td><?php echo anchor('admin/invoice/detail/'.$inv->id, '<div class="btn btn-sm btn-primary">Detail</div>')?></td>
 		</tr>
 
-	<?php endforeach; ?>
+		<?php endforeach; ?>
 	</table>
 	
 </div>

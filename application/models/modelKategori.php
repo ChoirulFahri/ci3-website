@@ -18,7 +18,7 @@ class ModelKategori extends CI_Model {
 
     public function PakaianAnak(){
         return $this->db->get_where("data_barang",
-        array('kategori' =>'Pakaian Anak'));
+        array('kategori' =>'Pakaian Anak-anak'));
     }
 
     public function PeralatanOlahraga(){
