@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('dashboard'); ?>">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-store"></i>
                 </div>
@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('dashboard'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -29,7 +29,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                KATAGORI
+                KATEGORI
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -50,40 +50,42 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="<?php echo base_url('kategori/Elektronik'); ?>">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Elektronik</span>
                 </a>
             </li>
              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="<?php echo base_url('kategori/PakaianPria'); ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>pakaian Pria</span>
+                    <span>Pakaian Pria</span>
                 </a>
             </li>
              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="<?php echo base_url('kategori/PakaianWanita'); ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>pakaian wanita</span>
+                    <span>Pakaian Wanita</span>
                 </a>
             </li>
              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="<?php echo base_url('kategori/PakaianAnak'); ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>pakaian anak</span>
+                    <span>Pakaian Anak</span>
                 </a>
             </li>
              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-tshirt"></i>
-                    <span>pakaian olahraga</span>
+                <a class="nav-link collapsed" href="<?php echo base_url('kategori/PeralatanOlahraga'); ?>">
+                    <i class="fas fa-fw fa-futbol"></i>
+                    <span>Peralatan Olahraga</span>
                 </a>
             </li>
+             <!-- <li class="nav-item">
+                <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Peralatan Olahraga</span>
+                </a>
+            </li> -->
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
